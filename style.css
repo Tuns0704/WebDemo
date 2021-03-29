@@ -1,84 +1,101 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat',sans-serif;
+/* base css  */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
-div{
-    display: block;
+div {
+  display: block;
 }
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.container {
+}
+.section_title {
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* end base css     */
 /* Start Logo css */
-.logo{
-    padding: 10px 0;
+.logo {
+  padding: 10px 0;
 }
-.logo img{
-    width: 118px;
-    height: 80px;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
+.logo img {
+  width: 118px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
 /* End logo css */
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 /* Start navbar */
-header nav{
-    background: #7E1117;
-    position: relative;
-    min-height: 56px;
+header nav {
+  background: #7e1117;
+  position: relative;
+  min-height: 56px;
 }
-ul{
-    margin: 0;
+.navbar .nav-list li {
+  list-style: none;
+  display: inline;
+  margin: 0 auto;
+  position: relative;
+  margin: 20px;
 }
-.list-inline{
-    padding-left: 0;
-    margin-left: -5px;
-    list-style: none;
+.navbar .nav-list li a {
+  font-weight: 700;
+  font-size: 17px;
+  padding: 10px 8px;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
 }
-.navbar ul li{
-    list-style: none;
-    display: inline;
-    margin: 0 auto;
-    position: relative;
-    margin: 20px;
-}
-.navbar ul li a{
-    font-weight: 700;
-    font-size: 17px;
-    padding: 10px 8px;
-    color: #fff;
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-header .header-cart img, .header-search img{
-    padding: 0 8px;
-    width: 42px;
-    height: 38px;
-    margin: 0 auto;
-    vertical-align: middle;
+header .header-cart img,
+.header-search img {
+  padding: 0 8px;
+  width: 42px;
+  height: 38px;
+  margin: 0 auto;
+  vertical-align: middle;
 }
 /* end navbar */
 /* start dropdown-bar */
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
-  
+
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #7E1117;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #7e1117;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
-  
+.dropdown h3:hover {
+  background-color: lightblue;
+}
 .dropdown:hover .dropdown-content {
-    display:block;
+  display: block;
 }
-.dropdown ul li a{
-    padding: 0 10px;
-    display: block;
-    text-align: left;
+.dropdown h3 {
+  padding: 0 10px;
+  display: block;
+  text-align: left;
+  transition: all 0.1s;
 }
 /* end dropdown-bar */
